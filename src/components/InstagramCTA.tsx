@@ -28,7 +28,7 @@ const InstagramCTA = () => {
               background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
             }}
           >
-            <Instagram size={18} />
+            <Instagram size={24} />
             @radioa7sertanejofmoficial
           </motion.a>
         </motion.div>
