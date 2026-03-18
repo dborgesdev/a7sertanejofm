@@ -15,7 +15,7 @@ const InstagramCTA = () => {
             Viva os bastidores
           </h2>
           <p className="text-muted-foreground text-lg max-w-md mx-auto mb-10 font-body">
-            Acompanhe promoções, estúdio ao vivo e os melhores cortes da programação.
+            Faça parte da maior comunidade sertaneja do país. Acompanhe os momentos que marcam a nossa história e fique por dentro de tudo o que acontece na rádio que é a cara do Brasil.
           </p>
           <motion.a
             href="https://www.instagram.com/radioa7sertanejofmoficial"
