@@ -99,7 +99,7 @@ const HeroSection = () => {
           whileTap={{ scale: 0.95 }}
           className="bg-primary text-primary-foreground font-display font-black px-10 py-5 rounded-full uppercase tracking-widest text-sm flex items-center gap-3 orange-pulse"
         >
-          Ouça o Modão <Play size={20} fill="currentColor" />
+          Ouça Modão <Play size={20} fill="currentColor" />
         </motion.a>
 
         <div className="absolute bottom-10 flex gap-2 p-2 bg-black/20 backdrop-blur-sm rounded-full">
