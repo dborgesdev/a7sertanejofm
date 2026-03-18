@@ -27,7 +27,8 @@ const PlayerSection = () => {
             </span>
           </div>
           <h2 className="font-display font-black text-4xl md:text-5xl tracking-tighter">
-            O Melhor do Sertanejo
+            Nossa Playlist<br />
+            Você ouve e ama
           </h2>
         </motion.div>
 
