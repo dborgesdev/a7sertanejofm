@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="py-12 border-t border-primary/30">
       <div className="container flex flex-col items-center gap-6 text-center">
-        <img alt="A7 Sertanejo" className="h-14 opacity-60 grayscale" src="/lovable-uploads/7f897eb6-42d5-46c0-abb7-764cdaf32768.png" />
+        <img alt="A7 Sertanejo" className="h-16 opacity-60 grayscale" src={logo} />
         <p className="text-muted-foreground font-display font-bold text-lg tracking-wide">
           Sempre com você!
         </p>
