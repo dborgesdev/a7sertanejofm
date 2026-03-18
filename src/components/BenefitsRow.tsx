@@ -5,7 +5,7 @@ const benefits = [
   { icon: Zap, title: "Energia 24h", desc: "Sem pausas para o tédio." },
   { icon: Headphones, title: "Qualidade HD", desc: "Som cristalino em qualquer dispositivo." },
   { icon: Music, title: "Seleção Premium", desc: "As melhores faixas, sem repetição chata." },
-  { icon: MapPin, title: "Feita pra Você", desc: "Companhia garantida em Apucarana e no mundo." },
+  { icon: MapPin, title: "Feita pra Você", desc: "Companhia garantida no Brasil e no mundo." },
 ];
 
 const BenefitsRow = () => {
