@@ -37,7 +37,7 @@ const AppDownload = () => {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 font-body">
               Leve a melhor programação para o carro, academia ou trabalho.
-              Baixe o aplicativo oficial, ouça ao vivo e interaja com a nossa equipe.
+              Baixe o aplicativo oficial e ouça ao vivo.
             </p>
             <div className="flex flex-wrap gap-4">
               {[
