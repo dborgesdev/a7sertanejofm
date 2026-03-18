@@ -47,6 +47,7 @@ const Header = () => {
             alt="A7 Sertanejo"
             className="h-16 md:h-24 w-auto drop-shadow-[0_0_15px_rgba(255,78,0,0.3)]"
           />
+          <p classname="text-sm font-medium text-center" >Sempre com você!</p>
         </a>
 
         {/* Desktop nav right */}
