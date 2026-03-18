@@ -46,7 +46,7 @@ const Header = () => {
           <img
             src={logo}
             alt="A7 Sertanejo"
-            className="h-14 md:h-20 w-auto drop-shadow-[0_0_15px_rgba(255,78,0,0.3)]"
+            className="h-20 md:h-32 w-auto drop-shadow-[0_0_15px_rgba(255,78,0,0.3)]"
           />
         </a>
 
