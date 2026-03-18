@@ -72,7 +72,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-muted-foreground text-lg md:text-xl font-body max-w-md mb-10"
         >
-          Rádio A7 Sertanejo — Sempre com você.
+          A7 Sertanejo FM — Sempre com você!
         </motion.p>
 
         <motion.a
@@ -84,7 +84,7 @@ const HeroSection = () => {
           whileTap={{ scale: 0.95 }}
           className="bg-primary text-primary-foreground font-display font-black px-10 py-5 rounded-full uppercase tracking-widest text-sm flex items-center gap-3 orange-pulse"
         >
-          Sintonize o Modão <Play size={20} fill="currentColor" />
+          Ouça o Modão <Play size={20} fill="currentColor" />
         </motion.a>
 
         <div className="absolute bottom-10 flex gap-2">
