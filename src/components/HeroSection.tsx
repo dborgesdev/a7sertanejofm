@@ -19,39 +19,41 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative h-[100svh] overflow-hidden">
-      <AnimatePresence initial={false}>
-        <motion.div
-          key={current}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="absolute inset-0"
-        >
-         <motion.img
-              initial={{ scale: 1.1 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 6, ease: "linear" }}
-              src={slides[current]}
-              alt="A7 Sertanejo"
-              className="w-full h-full object-cover"
-            />
-        </motion.div>
-      </AnimatePresence>
+    <section id="hero" className="relative h-[100svh] overflow-hidden bg-background">
+      <div className="absolute inset-0 z-0">
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={current}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="absolute inset-0"
+          >
+           <motion.img
+                initial={{ scale: 1.1 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 6, ease: "linear" }}
+                src={slides[current]}
+                alt="A7 Sertanejo"
+                className="w-full h-full object-cover brightness-110"
+              />
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background z-10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/30 to-transparent z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/80 z-10" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_20%,rgba(0,0,0,0.4)_100%)] z-10" />
 
-      <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
+      <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5 mb-8">
+          <div className="inline-flex items-center gap-2 bg-black/40 backdrop-blur-md border border-white/10 rounded-full px-4 py-1.5 mb-8">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs font-display font-bold uppercase tracking-widest text-primary">
+            <span className="text-xs font-display font-bold uppercase tracking-widest text-white">
               Ao Vivo
             </span>
           </div>
@@ -61,19 +63,21 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-6 text-glow-orange"
+          /* drop-shadow-xl e text-shadow para garantir leitura em fundos claros */
+          className="font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]"
           style={{ textWrap: "balance" }}
         >
           A batida que o seu
           <br />
-          <span className="gradient-text">coração entende.</span>
+          <span className="gradient-text drop-shadow-[0_2px_8px_rgba(255,78,0,0.4)]">coração entende.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-muted-foreground text-lg md:text-xl font-body max-w-md mb-10"
+          /* Aumentamos a opacidade e adicionamos sombra leve */
+          className="text-white font-medium text-lg md:text-xl font-body max-w-md mb-10 drop-shadow-md"
         >
           A7 Sertanejo FM — Sempre com você!
         </motion.p>
@@ -90,13 +94,13 @@ const HeroSection = () => {
           Ouça o Modão <Play size={20} fill="currentColor" />
         </motion.a>
 
-        <div className="absolute bottom-10 flex gap-2">
+        <div className="absolute bottom-10 flex gap-2 p-2 bg-black/20 backdrop-blur-sm rounded-full">
           {slides.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                i === current ? "bg-primary w-8" : "bg-foreground/30"
+                i === current ? "bg-primary w-8" : "bg-white/50"
               }`}
             />
           ))}
