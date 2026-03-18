@@ -5,6 +5,9 @@ const Footer = () => {
     <footer className="py-12 border-t border-primary/30">
       <div className="container flex flex-col items-center gap-6 text-center">
         <img alt="A7 Sertanejo" className="h-16" src="/logo-a7sertanejo-hf.png" />
+        <p className="text-muted-foreground font-body text-lg">Sempre com você!</p>
+        <p className="text-muted-foreground/60 font-body text-base">Apucarana - Paraná</p>
+        
         <div className="flex gap-4">
           <a
             href="https://www.instagram.com/radioa7sertanejofmoficial"
