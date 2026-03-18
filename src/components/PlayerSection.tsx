@@ -54,7 +54,6 @@ const PlayerSection = () => {
 
           {/* Infinite image carousel */}
           <div className="overflow-hidden rounded-2xl relative">
-            {/* Overlay opcional para suavizar as bordas do carrossel */}
             <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
             <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
           
@@ -64,10 +63,6 @@ const PlayerSection = () => {
                   key={i}
                   src={img}
                   alt="A7 Sertanejo"
-                  {/* brightness-110: Aumenta o brilho em 10%
-                      contrast-110: Melhora a definição para as cores não ficarem lavadas
-                      opacity-90: Deixa levemente translúcido para fundir melhor com o fundo (opcional)
-                  */}
                   className="h-28 md:h-40 w-auto object-cover flex-shrink-0 brightness-110 contrast-110 hover:brightness-125 transition-all duration-300"
                   loading="lazy"
                 />
