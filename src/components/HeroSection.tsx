@@ -20,25 +20,28 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative h-[100svh] overflow-hidden">
-      <AnimatePresence mode="wait">
+      <AnimatePresence initial={false}>
         <motion.div
           key={current}
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          <img
-            src={slides[current]}
-            alt="A7 Sertanejo"
-            className="w-full h-full object-cover"
-          />
+         <motion.img
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 6, ease: "linear" }}
+              src={slides[current]}
+              alt="A7 Sertanejo"
+              className="w-full h-full object-cover"
+            />
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/30 to-transparent z-10" />
 
       <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
         <motion.div
