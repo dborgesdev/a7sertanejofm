@@ -14,7 +14,7 @@ const cards = [
   { title: "Universitário", desc: "O agito que domina o Brasil.", image: cardUniversitario, popup: "A energia das arenas, os hits do momento e as parcerias que estouram nos paredões de som de todo o país." },
   { title: "As Patroas", desc: "A força feminina no sertanejo.", image: cardPatroas, popup: "Marília, Maiara, Maraisa e a nova geração de mulheres que revolucionaram as letras e a atitude da música sertaneja." },
   { title: "Play pro Churrasco", desc: "A trilha do seu fim de semana.", image: cardChurrasco, popup: "Fogo na carne e som na caixa. A programação perfeita para reunir os amigos e a família sem precisar pular de faixa." },
-  { title: "Top 10 A7", desc: "As mais pedidas da semana.", image: cardTop10, popup: "Atualização semanal com as músicas que os ouvintes de Apucarana e região não param de pedir no nosso WhatsApp." },
+  { title: "Modão Raiz", desc: "A essência pura do campo.", image: cardTop10, popup: "O modão raiz também faz parte da nossa playlist. Trazemos os sons mais tradicionais do coração do campo até você." },
 ];
 
 const CultureCards = () => {
