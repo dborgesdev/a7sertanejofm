@@ -87,7 +87,7 @@ const AppDownload = () => {
                 {/* Screen */}
                 <div className="relative rounded-[2.6rem] overflow-hidden bg-background">
                   <img
-                    src={appMockup}
+                    src="/tela-app-a7 sertanejo.jpg"
                     alt="App A7 Sertanejo"
                     className="w-60 md:w-68 aspect-[9/19.5] object-cover"
                     loading="lazy"
