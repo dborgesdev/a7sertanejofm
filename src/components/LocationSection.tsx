@@ -17,11 +17,11 @@ const LocationSection = () => {
         >
           <MapPin size={40} className="mx-auto mb-6 text-primary" strokeWidth={1.5} />
           <h2 className="font-display font-black text-4xl md:text-5xl tracking-tighter mb-4">
-            De Apucarana{" "}
+            Do Brasil{" "}
             <span className="gradient-text">para o mundo.</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto font-body">
-            Orgulho de transmitir a energia do Norte do Paraná para todos os cantos do Brasil.
+            Orgulho de transmitir a energia do Brasil para todos os cantos do Mundo.
           </p>
         </motion.div>
       </div>
