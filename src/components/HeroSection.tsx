@@ -50,7 +50,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="uppercase tracking-[0.2em] text-muted-foreground mb-6 font-body md:text-2xl text-base">
+          className="uppercase text-white font-medium text-2xl md:text-3xl font-body max-w-md mb-10 drop-shadow-md">
           Sempre com você!
         </motion.p>
         
