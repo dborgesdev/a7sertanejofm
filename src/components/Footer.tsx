@@ -10,7 +10,7 @@ const Footer = () => {
             href="https://www.instagram.com/radioa7sertanejofmoficial"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground/60 hover:text-primary hover:border-primary/40 transition-colors">
+            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-colors">
             
             <Instagram size={18} strokeWidth={1.5} />
           </a>
@@ -18,21 +18,21 @@ const Footer = () => {
             href="https://wa.me/5543998461977"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground/60 hover:text-[#25D366] hover:border-[#25D366]/40 transition-colors">
+            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground hover:text-[#25D366] hover:border-[#25D366] transition-colors">
             
             <MessageCircle size={18} strokeWidth={1.5} />
           </a>
         </div>
-        <p className="text-muted-foreground/50 text-xs font-body">
+        <p className="text-muted-foreground text-xs font-body">
           © 2026 Rádio A7 Sertanejo. Todos os direitos reservados.
         </p>
-        <p className="text-muted-foreground/40 text-xs font-body">
+        <p className="text-muted-foreground text-xs font-body">
           Desenvolvido por{" "}
           <a
             href="https://smartlocal.com.br"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary/60 hover:text-primary transition-colors">
+            className="text-primary hover:text-primary transition-colors">
             
             Douglas Borges - Smart Local
           </a>
