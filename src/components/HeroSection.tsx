@@ -4,8 +4,11 @@ import { Play } from "lucide-react";
 import heroArena from "@/assets/hero-arena.jpg";
 import heroEstrada from "@/assets/hero-estrada.jpg";
 import heroDanca from "@/assets/hero-danca.jpg";
+import heroFestival from "@/assets/hero-festival.jpg";
+import heroPalco from "@/assets/hero-palco.jpg";
+import heroPublico from "@/assets/hero-publico.jpg";
 
-const slides = [heroArena, heroEstrada, heroDanca];
+const slides = [heroArena, heroEstrada, heroDanca, heroFestival, heroPalco, heroPublico];
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
@@ -17,7 +20,6 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative h-[100svh] overflow-hidden">
-      {/* Background carousel */}
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -35,11 +37,9 @@ const HeroSection = () => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
       <div className="absolute inset-0 bg-gradient-to-r from-background/50 to-transparent" />
 
-      {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -87,7 +87,6 @@ const HeroSection = () => {
           Sintonize o Modão <Play size={20} fill="currentColor" />
         </motion.a>
 
-        {/* Slide indicators */}
         <div className="absolute bottom-10 flex gap-2">
           {slides.map((_, i) => (
             <button
