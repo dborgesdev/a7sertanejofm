@@ -43,7 +43,30 @@ const AppDownload = () => {
               {[
                 { label: "Android", icon: AndroidIcon },
                 { label: "iOS", icon: AppleIcon },
+              ].map((p) => (
+                <motion.a
+                  key={p.label}
+                  href="https://player.hdradios.net/player-app-multi-plataforma/6918"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(255, 78, 0, 0.4)" }}
+                  whileTap={{ scale: 0.95 }}
+                  className="glass-card rounded-2xl px-6 py-3 flex items-center gap-3 hover:border-primary/40 transition-colors"
+                >
+                  <p.icon size={20} className="text-primary" strokeWidth={1.5} />
+                  <div>
+                    <span className="text-xs text-muted-foreground block font-body">Baixe para</span>
+                    <span className="font-display font-bold text-sm">{p.label}</span>
+                  </div>
+                </motion.a>
+              ))}
+            </div>
+
+            <div className="md:flex md:flex-wrap md:gap-4">
+              {[
                 { label: "Windows", icon: WindowsIcon },
+                { label: "Android", icon: AndroidIcon },
+                { label: "iOS", icon: AppleIcon },
               ].map((p) => (
                 <motion.a
                   key={p.label}
