@@ -23,13 +23,13 @@ const InstagramCTA = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-display font-black uppercase tracking-widest text-sm text-foreground"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-display font-black tracking-widest text-sm text-foreground"
             style={{
               background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
             }}
           >
             <Instagram size={18} />
-            Seguir @radioa7sertanejofmoficial
+            @radioa7sertanejofmoficial
           </motion.a>
         </motion.div>
       </div>
