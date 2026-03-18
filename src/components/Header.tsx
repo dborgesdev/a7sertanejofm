@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Play } from "lucide-react";
-import logo from "@/assets/logo-a7sertanejo.png";
 
 const navItems = [
   { label: "Início", href: "#hero" },
@@ -44,7 +43,7 @@ const Header = () => {
         {/* Logo - centered on mobile, larger */}
         <a href="#hero" className="md:absolute md:left-1/2 md:-translate-x-1/2 mx-auto md:mx-0">
           <img
-            src={logo}
+            src="/logo-a7sertanejo-hf.png"
             alt="A7 Sertanejo"
             className="h-16 md:h-24 w-auto drop-shadow-[0_0_15px_rgba(255,78,0,0.3)]"
           />
