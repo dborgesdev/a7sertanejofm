@@ -41,12 +41,12 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Logo - centered on mobile */}
+        {/* Logo - centered on mobile, larger */}
         <a href="#hero" className="md:absolute md:left-1/2 md:-translate-x-1/2 mx-auto md:mx-0">
           <img
             src={logo}
             alt="A7 Sertanejo"
-            className="h-16 md:h-20 max-h-[70px] md:max-h-[80px] w-auto drop-shadow-[0_0_15px_rgba(255,78,0,0.3)]"
+            className="h-14 md:h-20 w-auto drop-shadow-[0_0_15px_rgba(255,78,0,0.3)]"
           />
         </a>
 

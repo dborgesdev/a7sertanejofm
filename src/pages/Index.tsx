@@ -8,7 +8,6 @@ import AppDownload from "@/components/AppDownload";
 import InstagramCTA from "@/components/InstagramCTA";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
-import WhatsAppFAB from "@/components/WhatsAppFAB";
 
 const Index = () => {
   return (
@@ -23,7 +22,6 @@ const Index = () => {
       <InstagramCTA />
       <LocationSection />
       <Footer />
-      <WhatsAppFAB />
     </div>
   );
 };

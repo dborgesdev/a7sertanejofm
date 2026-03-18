@@ -54,15 +54,32 @@ const AppDownload = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="order-1 md:order-2 flex justify-center"
           >
-            <div className="relative">
+            {/* iPhone-style frame */}
+            <motion.div
+              animate={{ y: [0, -12, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="relative"
+            >
               <div className="absolute -inset-8 bg-primary/10 rounded-full blur-3xl" />
-              <img
-                src={appMockup}
-                alt="App A7 Sertanejo"
-                className="relative w-64 md:w-72 rounded-[2.5rem] shadow-ember border-2 border-foreground/10"
-                loading="lazy"
-              />
-            </div>
+              {/* iPhone bezel */}
+              <div className="relative bg-[#1a1a1a] rounded-[3rem] p-[6px] shadow-ember border border-foreground/10">
+                {/* Dynamic Island / Notch */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-7 bg-[#1a1a1a] rounded-b-2xl z-10 flex items-center justify-center">
+                  <div className="w-16 h-4 bg-[#0a0a0a] rounded-full" />
+                </div>
+                {/* Screen */}
+                <div className="relative rounded-[2.6rem] overflow-hidden bg-background">
+                  <img
+                    src={appMockup}
+                    alt="App A7 Sertanejo"
+                    className="w-60 md:w-68 aspect-[9/19.5] object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                {/* Bottom bar */}
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-28 h-1 bg-foreground/30 rounded-full" />
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>

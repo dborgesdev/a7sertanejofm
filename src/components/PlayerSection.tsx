@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
 import { Radio } from "lucide-react";
+import heroArena from "@/assets/hero-arena.jpg";
+import heroEstrada from "@/assets/hero-estrada.jpg";
+import heroDanca from "@/assets/hero-danca.jpg";
+import heroFestival from "@/assets/hero-festival.jpg";
+import heroPalco from "@/assets/hero-palco.jpg";
+import heroPublico from "@/assets/hero-publico.jpg";
+
+const carouselImages = [heroArena, heroEstrada, heroDanca, heroFestival, heroPalco, heroPublico];
 
 const PlayerSection = () => {
   return (
@@ -28,16 +36,34 @@ const PlayerSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-3xl mx-auto glass-card rounded-[32px] p-3 md:p-4 shadow-ember"
+          className="max-w-3xl mx-auto"
         >
-          <div className="rounded-3xl overflow-hidden aspect-video md:aspect-[16/7]">
-            <iframe
-              src="https://player.hdradios.net/player-topo-html5/6918/000000"
-              className="w-full h-full border-0"
-              allow="autoplay"
-              title="A7 Sertanejo Player"
-              loading="lazy"
-            />
+          {/* Player iframe */}
+          <div className="glass-card rounded-2xl p-2 md:p-3 shadow-ember mb-6">
+            <div className="rounded-xl overflow-hidden h-[40px] sm:h-[60px]">
+              <iframe
+                src="https://player.hdradios.net/player-topo-html5/6918/000000"
+                className="w-full h-full border-0"
+                allow="autoplay"
+                title="A7 Sertanejo Player"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Infinite image carousel */}
+          <div className="overflow-hidden rounded-2xl">
+            <div className="flex animate-scroll-infinite">
+              {[...carouselImages, ...carouselImages].map((img, i) => (
+                <img
+                  key={i}
+                  src={img}
+                  alt="A7 Sertanejo"
+                  className="h-28 md:h-40 w-auto object-cover flex-shrink-0"
+                  loading="lazy"
+                />
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>

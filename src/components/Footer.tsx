@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="py-12 border-t border-primary/30">
       <div className="container flex flex-col items-center gap-6 text-center">
-        <img src={logo} alt="A7 Sertanejo" className="h-12 opacity-60 grayscale" />
+        <img src={logo} alt="A7 Sertanejo" className="h-14 opacity-60 grayscale" />
         <p className="text-muted-foreground font-display font-bold text-lg tracking-wide">
           Sempre com você.
         </p>
@@ -29,6 +29,17 @@ const Footer = () => {
         </div>
         <p className="text-muted-foreground/50 text-xs font-body">
           © 2026 Rádio A7 Sertanejo. Todos os direitos reservados.
+        </p>
+        <p className="text-muted-foreground/40 text-xs font-body">
+          Desenvolvido por{" "}
+          <a
+            href="https://smartlocal.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary/60 hover:text-primary transition-colors"
+          >
+            Douglas Borges - Smart Local
+          </a>
         </p>
       </div>
     </footer>
