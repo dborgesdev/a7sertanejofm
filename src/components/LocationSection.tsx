@@ -21,7 +21,7 @@ const LocationSection = () => {
             <span className="gradient-text">para o mundo.</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto font-body">
-            Orgulho de transmitir a energia do Brasil para todos os cantos do Mundo.
+            Orgulho de transmitir a energia do Brasil para todos os cantos do Planeta.
           </p>
         </motion.div>
       </div>
