@@ -46,6 +46,14 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_20%,rgba(0,0,0,0.4)_100%)] z-10" />
 
       <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="uppercase tracking-[0.2em] text-muted-foreground mb-6 font-body md:text-2xl text-base">
+          Sempre com você!
+        </motion.p>
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
