@@ -64,7 +64,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           /* drop-shadow-xl e text-shadow para garantir leitura em fundos claros */
-          className="font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]"
+          className="font-display font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tighter leading-none mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]"
           style={{ textWrap: "balance" }}
         >
           A batida que o seu
@@ -77,9 +77,9 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
           /* Aumentamos a opacidade e adicionamos sombra leve */
-          className="text-white font-medium text-lg md:text-xl font-body max-w-md mb-10 drop-shadow-md"
+          className="text-white font-medium text-xl md:text-2xl font-body max-w-md mb-10 drop-shadow-md"
         >
-          A7 Sertanejo FM — Sempre com você!
+          A7 Sertanejo FM
         </motion.p>
 
         <motion.a
