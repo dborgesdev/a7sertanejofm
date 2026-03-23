@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const SertanejoVideoSection = () => {
+const VideoSection = () => {
   // Parâmetros para um player minimalista e focado no conteúdo:
   const videoId = "LBkUiG-d46Y";
   const videoParams = "?modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0";
