@@ -14,17 +14,23 @@ const VideoSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center">
-          
-          {/* Título H2 com destaque em Laranja */}
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-sans font-black text-white mb-10 text-center uppercase italic tracking-tighter"
-          >
-            O Som da <span className="text-orange-500">Arena</span> na sua Tela
-          </motion.h2>
 
+           <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="font-display font-black text-4xl md:text-5xl tracking-tighter mb-4">
+                O som da {" "}
+                <span className="gradient-text">Arena</span>
+                na sua Tela
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-lg mx-auto font-body">
+                Sinta a emoção.
+              </p>
+            </motion.div>
+          
           {/* Container do Vídeo com Borda "Glow" e Aspect Ratio */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.98 }}
@@ -45,15 +51,6 @@ const VideoSection = () => {
               />
             </div>
           </motion.div>
-
-          {/* Elemento Decorativo Inferior */}
-          <div className="mt-8 flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-orange-500/50" />
-            <span className="text-zinc-500 font-sans text-xs font-bold tracking-[0.3em] uppercase">
-              Sinta a emoção
-            </span>
-            <div className="h-[2px] w-8 bg-orange-500/50" />
-          </div>
         </div>
       </div>
     </section>
