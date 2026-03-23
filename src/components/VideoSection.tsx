@@ -23,7 +23,7 @@ const VideoSection = () => {
             >
               <h2 className="font-display font-black text-4xl md:text-5xl tracking-tighter mb-4">
                 O som da {" "}
-                <span className="gradient-text">Arena</span>
+                <span className="gradient-text">Arena</span> {" "}
                 na sua Tela
               </h2>
               <p className="text-muted-foreground text-lg max-w-lg mx-auto font-body">
