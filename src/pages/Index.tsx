@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import PlayerSection from "@/components/PlayerSection";
+import VideoSection from "@/components/VideoSection";
 import AboutSection from "@/components/AboutSection";
 import CultureCards from "@/components/CultureCards";
 import BenefitsRow from "@/components/BenefitsRow";
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <PlayerSection />
+      <VideoSection />
       <AboutSection />
       <CultureCards />
       <BenefitsRow />
