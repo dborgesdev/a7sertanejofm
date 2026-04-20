@@ -72,14 +72,16 @@ const PlayerSection = () => {
                 height={1080}
               />
             ))}
-            <div className="absolute inset-0 bg-linear-to-t from-texas-dark via-texas-dark/10 to-transparent" />
+            {/* <div className="absolute inset-0 bg-linear-to-t from-background via-background/10 to-transparent z-10" /> */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/80 z-10" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_20%,rgba(0,0,0,0.4)_100%)] z-10" />
 
             {/* Equalizer bars */}
-            <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex items-end gap-1 z-10">
               {[...Array(20)].map((_, i) => (
                 <motion.div
                   key={i}
-                  className="w-1 rounded-full bg-secondary/80"
+                  className="w-1 rounded-full bg-[#FF5100]"
                   animate={{
                     height: [8, Math.random() * 30 + 10, 8],
                   }}
