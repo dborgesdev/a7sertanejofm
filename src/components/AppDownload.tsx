@@ -21,7 +21,10 @@ const WindowsIcon = ({ size = 20 }: { size?: number }) => (
 
 const AppDownload = () => {
   return (
-    <section id="app" className="py-20 md:py-32 bg-gradient-to-b from-surface-elevated to-background">
+    <section
+      id="app"
+      className="py-20 md:py-32 bg-gradient-to-b from-surface-elevated to-background"
+    >
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -32,8 +35,7 @@ const AppDownload = () => {
             className="order-2 md:order-1"
           >
             <h2 className="font-display font-black text-4xl md:text-5xl tracking-tighter mb-6 leading-tight">
-              A7 Sertanejo{" "}
-              <span className="gradient-text">no seu bolso.</span>
+              A7 Sertanejo <span className="gradient-text">no seu bolso.</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 font-body">
               Leve a melhor programação para o carro, academia ou trabalho.
@@ -47,17 +49,28 @@ const AppDownload = () => {
               ].map((p) => (
                 <motion.a
                   key={p.label}
-                  href="https://player.hdradios.net/player-app-multi-plataforma/6918"
+                  href="https://player.srvvox.com.br/player-app-multi-plataforma/7700"
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(255, 78, 0, 0.4)" }}
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 0 25px rgba(255, 78, 0, 0.4)",
+                  }}
                   whileTap={{ scale: 0.95 }}
                   className="glass-card rounded-2xl px-6 py-3 flex items-center gap-3 hover:border-primary/40 transition-colors"
                 >
-                  <p.icon size={20} className="text-primary" strokeWidth={1.5} />
+                  <p.icon
+                    size={20}
+                    className="text-primary"
+                    strokeWidth={1.5}
+                  />
                   <div>
-                    <span className="text-xs text-muted-foreground block font-body">Baixe para</span>
-                    <span className="font-display font-bold text-sm">{p.label}</span>
+                    <span className="text-xs text-muted-foreground block font-body">
+                      Baixe para
+                    </span>
+                    <span className="font-display font-bold text-sm">
+                      {p.label}
+                    </span>
                   </div>
                 </motion.a>
               ))}
