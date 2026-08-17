@@ -1,31 +1,45 @@
 import { Instagram, MessageCircle } from "lucide-react";
+import clubeLogo from "@/assets/cluberadios.webp";
 
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-primary/30">
       <div className="container flex flex-col items-center gap-6 text-center">
-        <img alt="A7 Sertanejo" className="h-16" src="/logo-a7sertanejo-hf.png" />
-        <p className="text-muted-foreground font-body text-lg">Sempre com você!</p>
-        <p className="text-muted-foreground/60 font-body text-base">Apucarana - Paraná</p>
-        
+        <img
+          alt="A7 Sertanejo"
+          className="h-16"
+          src="/logo-a7sertanejo-hf.png"
+        />
+        <p className="text-muted-foreground font-body text-lg">
+          Sempre com você!
+        </p>
+        <p className="text-muted-foreground/60 font-body text-base">
+          Apucarana - Paraná
+        </p>
+
         <div className="flex gap-4">
           <a
             href="https://www.instagram.com/radioa7sertanejofmoficial"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-colors">
-            
+            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-colors"
+          >
             <Instagram size={18} strokeWidth={1.5} />
           </a>
           <a
             href="https://wa.me/5543998461977"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground hover:text-[#25D366] hover:border-[#25D366] transition-colors">
-            
+            className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-foreground hover:text-[#25D366] hover:border-[#25D366] transition-colors"
+          >
             <MessageCircle size={18} strokeWidth={1.5} />
           </a>
         </div>
+
+        <div className="flex items-center gap-4">
+          <img alt="Clube de Rádios" className="h-16 w-auto" src={clubeLogo} />
+        </div>
+
         <p className="text-muted-foreground text-xs font-body">
           © 2026 Rádio A7 Sertanejo. Todos os direitos reservados.
         </p>
@@ -35,14 +49,14 @@ const Footer = () => {
             href="https://smartlocal.com.br"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary hover:text-primary transition-colors">
-            
+            className="text-primary hover:text-primary transition-colors"
+          >
             Douglas Borges - Smart Local
           </a>
         </p>
       </div>
-    </footer>);
-
+    </footer>
+  );
 };
 
 export default Footer;
