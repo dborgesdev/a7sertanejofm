@@ -8,19 +8,32 @@ import heroFestival from "@/assets/hero-festival.jpg";
 import heroPalco from "@/assets/hero-palco.jpg";
 import heroPublico from "@/assets/hero-publico.jpg";
 
-const slides = [heroArena, heroEstrada, heroDanca, heroFestival, heroPalco, heroPublico];
+const slides = [
+  heroArena,
+  heroEstrada,
+  heroDanca,
+  heroFestival,
+  heroPalco,
+  heroPublico,
+];
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrent((p) => (p + 1) % slides.length), 5000);
+    const timer = setInterval(
+      () => setCurrent((p) => (p + 1) % slides.length),
+      5000,
+    );
     return () => clearInterval(timer);
   }, []);
 
   return (
     /* Alterado de h-[100svh] para min-h-dvh + flex flex-col para permitir expansão se necessário */
-    <section id="hero" className="relative min-h-dvh flex flex-col overflow-hidden bg-background">
+    <section
+      id="hero"
+      className="relative min-h-dvh flex flex-col overflow-hidden bg-background"
+    >
       <div className="absolute inset-0 z-0">
         <AnimatePresence initial={false}>
           <motion.div
@@ -31,14 +44,14 @@ const HeroSection = () => {
             transition={{ duration: 1.5, ease: "easeInOut" }}
             className="absolute inset-0"
           >
-           <motion.img
-                initial={{ scale: 1.1 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 6, ease: "linear" }}
-                src={slides[current]}
-                alt="A7 Sertanejo"
-                className="w-full h-full object-cover brightness-110"
-              />
+            <motion.img
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 6, ease: "linear" }}
+              src={slides[current]}
+              alt="A7 Sertanejo"
+              className="w-full h-full object-cover brightness-110"
+            />
           </motion.div>
         </AnimatePresence>
       </div>
@@ -56,10 +69,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-white font-medium text-xl md:text-2xl font-body max-w-md mb-6 md:mb-10 drop-shadow-md">
+          className="text-white font-medium text-xl md:text-2xl font-body max-w-md mb-6 md:mb-10 drop-shadow-md"
+        >
           Sempre com você!
         </motion.p>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -82,7 +96,9 @@ const HeroSection = () => {
         >
           A batida que o seu
           <br />
-          <span className="gradient-text drop-shadow-[0_2px_8px_rgba(255,78,0,0.4)]">coração entende.</span>
+          <span className="gradient-text drop-shadow-[0_2px_8px_rgba(255,78,0,0.4)]">
+            coração entende.
+          </span>
         </motion.h1>
 
         <motion.p
@@ -91,7 +107,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-white font-medium text-xl md:text-2xl font-body max-w-md mb-8 md:mb-10 drop-shadow-md"
         >
-          A7 Sertanejo FM
+          A7 Sertanejo FM - On-line do Brasil para o Mundo.
         </motion.p>
 
         <motion.a
@@ -99,7 +115,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(255, 78, 0, 0.6)" }}
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0 0 30px rgba(255, 78, 0, 0.6)",
+          }}
           whileTap={{ scale: 0.95 }}
           className="bg-primary text-primary-foreground font-display font-black px-10 py-5 rounded-full uppercase tracking-widest text-sm flex items-center gap-3 orange-pulse"
         >
