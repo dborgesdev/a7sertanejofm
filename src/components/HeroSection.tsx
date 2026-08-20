@@ -65,15 +65,6 @@ const HeroSection = () => {
           3. pb-20: Garante que o conteúdo não encoste na borda inferior em telas curtas.
       */}
       <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-6 pt-[140px] md:pt-[180px] pb-20">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-white font-medium text-xl md:text-2xl font-body max-w-md mb-6 md:mb-10 drop-shadow-md"
-        >
-          Sempre com você!
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -96,8 +87,11 @@ const HeroSection = () => {
         >
           A batida que o seu
           <br />
-          <span className="gradient-text drop-shadow-[0_2px_8px_rgba(255,78,0,0.4)]">
-            coração entende.
+          <span className="pr-3 gradient-text drop-shadow-[0_2px_8px_rgba(255,78,0,0.4)]">
+            coração entende
+          </span>
+          <span className="block text-2xl sm:text-3xl md:text-4xl text-white/90 font-sans font-light tracking-normal mt-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+            On-line do Brasil para o Mundo
           </span>
         </motion.h1>
 
@@ -107,7 +101,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-white font-medium text-xl md:text-2xl font-body max-w-md mb-8 md:mb-10 drop-shadow-md"
         >
-          A7 Sertanejo FM - On-line do Brasil para o Mundo.
+          A7 Sertanejo FM - Sempre com Você!
         </motion.p>
 
         <motion.a
