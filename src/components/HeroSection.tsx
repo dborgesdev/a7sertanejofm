@@ -50,7 +50,7 @@ const HeroSection = () => {
               transition={{ duration: 6, ease: "linear" }}
               src={slides[current]}
               alt="A7 Sertanejo"
-              className="w-full h-full object-cover brightness-110"
+              className="w-full h-full object-cover brightness-[1.2] saturate-110"
             />
           </motion.div>
         </AnimatePresence>
