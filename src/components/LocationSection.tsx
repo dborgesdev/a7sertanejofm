@@ -6,8 +6,8 @@ const LocationSection = () => {
   return (
     <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0">
-        <img src={mapaImg} alt="Mapa Apucarana" className="w-full h-full object-cover opacity-30" loading="lazy" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/60" />
+        <img src={mapaImg} alt="Mapa Apucarana" className="w-full h-full object-cover opacity-45 brightness-110" loading="lazy" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/65 to-background/35" />
       </div>
       <div className="container relative z-10 text-center">
         <motion.div
