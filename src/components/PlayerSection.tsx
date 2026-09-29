@@ -108,7 +108,7 @@ const PlayerSection = () => {
   };
 
   return (
-    <section id="player" className="py-20 md:py-32 bg-stage-light">
+    <section id="player" className="py-20 md:py-32 bg-[hsl(20_14%_8%)]">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
