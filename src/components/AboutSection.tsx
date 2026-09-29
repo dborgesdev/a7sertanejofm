@@ -4,7 +4,7 @@ import aboutImg from "@/assets/about-studio.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 md:py-32 bg-stage-light-bottom overflow-hidden">
+    <section className="py-20 md:py-32 bg-[radial-gradient(circle_at_20%_100%,rgba(255,78,0,0.16)_0%,hsl(20_16%_11%)_58%,hsl(20_14%_9%)_100%)] overflow-hidden">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <motion.div
