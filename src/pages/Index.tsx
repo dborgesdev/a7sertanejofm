@@ -16,7 +16,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <PlayerSection />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <AboutSection />
       <CultureCards />
       <BenefitsRow />
