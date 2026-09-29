@@ -1,14 +1,9 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
-import mapaImg from "@/assets/mapa-apucarana.jpg";
 
 const LocationSection = () => {
   return (
-    <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={mapaImg} alt="Mapa Apucarana" className="w-full h-full object-cover opacity-45 brightness-110" loading="lazy" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/65 to-background/35" />
-      </div>
+    <section id="contact" className="py-20 md:py-32 relative overflow-hidden bg-[radial-gradient(circle_at_50%_0%,rgba(255,78,0,0.12)_0%,hsl(20_14%_8%)_48%,hsl(20_12%_6%)_100%)]">
       <div className="container relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
