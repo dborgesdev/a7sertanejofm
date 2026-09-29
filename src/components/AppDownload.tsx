@@ -59,11 +59,7 @@ const AppDownload = () => {
                   whileTap={{ scale: 0.95 }}
                   className="glass-card rounded-2xl px-6 py-3 flex items-center gap-3 hover:border-primary/40 transition-colors"
                 >
-                  <p.icon
-                    size={20}
-                    className="text-primary"
-                    strokeWidth={1.5}
-                  />
+                  <p.icon size={20} />
                   <div>
                     <span className="text-xs text-muted-foreground block font-body">
                       Baixe para
@@ -100,7 +96,7 @@ const AppDownload = () => {
                 {/* Screen */}
                 <div className="relative rounded-[2.6rem] overflow-hidden bg-background">
                   <img
-                    src="/tela-app-a7 sertanejo.jpg"
+                    src={appMockup}
                     alt="App A7 Sertanejo"
                     className="w-60 md:w-68 aspect-[9/19.5] object-cover"
                     loading="lazy"
