@@ -11,6 +11,14 @@ export default defineConfig(({ mode }) => ({
     hmr: {
       overlay: false,
     },
+    proxy: {
+      "/api/now-playing": {
+        target: "https://s04.svrdedicado.org:7916",
+        changeOrigin: true,
+        secure: true,
+        rewrite: () => "/stats?json=1",
+      },
+    },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {

@@ -49,7 +49,7 @@ const AppDownload = () => {
               ].map((p) => (
                 <motion.a
                   key={p.label}
-                  href="https://player.srvvox.com.br/player-app-multi-plataforma/7700"
+                  href="https://player.svrdedicado.org/player-app-multi-plataforma/7916"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{
