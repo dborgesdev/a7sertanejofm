@@ -21,7 +21,7 @@ const CultureCards = () => {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="culture" className="py-20 md:py-32">
+    <section id="culture" className="py-20 md:py-32 bg-[hsl(20_12%_6%)]">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

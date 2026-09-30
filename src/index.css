@@ -6,22 +6,22 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
+    --background: 20 12% 6%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 10%;
+    --card: 20 10% 13%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 7%;
+    --popover: 20 10% 10%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 19 100% 50%;
     --primary-foreground: 0 0% 0%;
 
-    --secondary: 0 0% 10%;
+    --secondary: 20 10% 13%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
+    --muted: 20 8% 18%;
     --muted-foreground: 0 0% 65%;
 
     --accent: 19 100% 50%;
@@ -30,15 +30,15 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 15%;
+    --border: 20 8% 25%;
+    --input: 20 8% 18%;
     --ring: 19 100% 50%;
 
     --radius: 0.75rem;
 
     --ember: 19 100% 50%;
     --ember-glow: 19 100% 50%;
-    --surface-elevated: 0 0% 10%;
+    --surface-elevated: 20 10% 14%;
 
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 90%;
@@ -75,21 +75,21 @@
   }
 
   .bg-stage-light {
-    background: radial-gradient(circle at 50% -20%, rgba(255, 78, 0, 0.15) 0%, rgba(0, 0, 0, 1) 70%);
+    background: radial-gradient(circle at 50% -20%, rgba(255, 78, 0, 0.24) 0%, hsl(20 12% 6%) 72%);
   }
 
   .bg-stage-light-bottom {
-    background: radial-gradient(circle at 50% 120%, rgba(255, 78, 0, 0.1) 0%, rgba(0, 0, 0, 1) 70%);
+    background: radial-gradient(circle at 50% 120%, rgba(255, 78, 0, 0.18) 0%, hsl(20 12% 6%) 72%);
   }
 
   .glass-card {
-    background: rgba(26, 26, 26, 0.6);
+    background: rgba(45, 37, 33, 0.72);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 78, 0, 0.15);
   }
 
   .glass-header {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(20, 14, 11, 0.55);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
